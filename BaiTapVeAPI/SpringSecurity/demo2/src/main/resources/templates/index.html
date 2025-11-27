@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Security Demo 2 - Home</title>
+</head>
+<body>
+<h1>Trang Index (Public)</h1>
+
+<ul>
+    <li><a th:href="@{/login}">Đăng nhập</a></li>
+    <li><a th:href="@{/home}">Vào trang Home (cần login)</a></li>
+    <li><a th:href="@{/api/users/hello}">Test API Hello (nếu có)</a></li>
+</ul>
+
+</body>
+</html>

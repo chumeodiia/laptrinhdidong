@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Home</title>
+</head>
+<body>
+<h1>Trang Home (cần đăng nhập)</h1>
+
+<p>Xin chào,
+    <span sec:authentication="name">user</span>!
+</p>
+
+<p>Quyền của bạn:
+    <span sec:authentication="principal.authorities">ROLE_USER</span>
+</p>
+
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Đăng xuất</button>
+</form>
+
+<p><a th:href="@{/}">Về trang Index</a></p>
+
+</body>
+</html>
