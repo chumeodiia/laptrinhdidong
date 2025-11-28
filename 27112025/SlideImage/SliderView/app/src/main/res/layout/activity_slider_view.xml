@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="200dp"
+        android:id="@+id/imgBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        app:srcCompat="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Bài tập slide image with SliderView"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+<com.smarteist.autoimageslider.SliderView
+    android:id="@+id/imageSlider"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:sliderAutoCycleEnabled="true"
+    app:sliderStartAutoCycle="true"
+    app:sliderAutoCycleDirection="back_and_forth"
+    app:sliderScrollTimeInSec="2"
+    app:sliderIndicatorEnabled="true"
+    app:sliderIndicatorOrientation="horizontal"
+    app:sliderIndicatorRadius="3dp"
+    app:sliderIndicatorSelectedColor="@android:color/white"
+    app:sliderIndicatorUnselectedColor="@android:color/darker_gray" />
+
+</LinearLayout>
+
