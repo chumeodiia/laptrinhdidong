@@ -3,7 +3,7 @@ package com.example.a04122025_1.api;
 import android.os.Message;
 
 import com.example.a04122025_1.Const.Const;
-import com.example.a04122025_1.model.ImageUpload;
+import com.example.a04122025_1.model.User;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 
-public class ServiceAPI {
+public interface ServiceAPI {
     @Multipart
-    @POST("upload.php")
-    Call<List<ImageUpload>> upload(
+    @POST("updateimages.php")
+    Call<ApiResponse> upload(
             @Part(Const.MY_USERNAME) RequestBody username,
             @Part MultipartBody.Part avatar
     );

@@ -20,7 +20,7 @@
             android:layout_centerVertical="true"
             android:padding="12dp"
             android:src="@drawable/ic_arrow_back"
-            app:tint="#FFFFFF"
+            android:tint="#FFFFFF"
             android:contentDescription="Back" />
 
         <TextView
